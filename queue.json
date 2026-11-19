@@ -63,8 +63,10 @@
       "slot": 1,
       "topic": "Der Ikea-Effekt: Selbstgebautes lieben wir mehr",
       "category": "Psychologie",
-      "status": "ready",
-      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_ikea-effekt.mp4"
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_ikea-effekt.mp4",
+      "media_id": "18104545865375519",
+      "posted_at": "2026-11-19T19:00:00Z"
     },
     {
       "day": 3,
