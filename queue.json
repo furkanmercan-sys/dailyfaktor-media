@@ -1,26 +1,170 @@
 {
   "posting_schedule": "0 9,14,19 * * * (Europe/Berlin)",
   "videos": [
-    {"day": 1, "slot": 1, "topic": "Kiwi vs Orange Vitamin C", "category": "Ernährung", "status": "posted", "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-18_kiwi-vitamin-c.mp4", "media_id": "17993083029116565"},
-    {"day": 1, "slot": 2, "topic": "Schlafzyklen 90-Min-Regel", "category": "Psychologie", "status": "posted", "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-18_schlaf.mp4", "media_id": "17909714352667479"},
-    {"day": 1, "slot": 3, "topic": "Blitzer km/h Toleranz", "category": "Wissenschaft", "status": "posted", "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-18_blitzer-toleranz.mp4", "media_id": "18106433360373914"},
-    {"day": 2, "slot": 1, "topic": "Dehnen vor Sport schadet mehr als es hilft", "category": "Sport", "status": "posted", "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-19_dehnen-vor-sport.mp4", "media_id": "18116533049272070", "posted_at": "2026-11-18T18:12:00Z"},
-    {"day": 2, "slot": 2, "topic": "3-Sekunden Blickkontakt-Trick für Sympathie", "category": "Sozialkompetenz", "status": "posted", "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-19_blickkontakt-trick.mp4", "media_id": "17968530779984895", "posted_at": "2026-11-19T08:11:00Z"},
-    {"day": 2, "slot": 3, "topic": "Warum Kaffee direkt nach dem Essen Eisenaufnahme blockiert", "category": "Ernährung", "status": "ready", "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-19_kaffee-nach-essen.mp4"},
-    {"day": 3, "slot": 1, "topic": "Der Ikea-Effekt: Selbstgebautes lieben wir mehr", "category": "Psychologie", "status": "ready", "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_ikea-effekt.mp4"},
-    {"day": 3, "slot": 2, "topic": "Warum der Himmel blau ist (Rayleigh-Streuung)", "category": "Wissenschaft", "status": "ready", "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_himmel-blau.mp4"},
-    {"day": 3, "slot": 3, "topic": "Wie viele Schritte du wirklich am Tag brauchst", "category": "Sport", "status": "ready", "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_schritte-mythos.mp4"},
-    {"day": 4, "slot": 1, "topic": "Mimicry: Warum Spiegeln sympathisch macht", "category": "Sozialkompetenz", "status": "pending"},
-    {"day": 4, "slot": 2, "topic": "Welches Öl du nie zu stark erhitzen solltest", "category": "Ernährung", "status": "pending"},
-    {"day": 4, "slot": 3, "topic": "Warum Fallschirmspringer nicht ewig schneller werden", "category": "Wissenschaft", "status": "pending"},
-    {"day": 5, "slot": 1, "topic": "Der Zeigarnik-Effekt: Unfertiges lässt uns nicht los", "category": "Psychologie", "status": "pending"},
-    {"day": 5, "slot": 2, "topic": "Muskelkater hat nichts mit Milchsäure zu tun", "category": "Sport", "status": "pending"},
-    {"day": 5, "slot": 3, "topic": "Dunkle vs weiße Schokolade - was wirklich drin ist", "category": "Ernährung", "status": "pending"},
-    {"day": 6, "slot": 1, "topic": "Warum Katzen fast immer auf die Pfoten fallen", "category": "Wissenschaft", "status": "pending"},
-    {"day": 6, "slot": 2, "topic": "Die 2-Minuten-Regel gegen Aufschieben", "category": "Sozialkompetenz", "status": "pending"},
-    {"day": 6, "slot": 3, "topic": "Warum wir prokrastinieren, obwohl wir es besser wissen", "category": "Psychologie", "status": "pending"},
-    {"day": 7, "slot": 1, "topic": "Bananen-Reifung: warum und wie stoppen", "category": "Ernährung", "status": "pending"},
-    {"day": 7, "slot": 2, "topic": "Cardio vor oder nach Krafttraining?", "category": "Sport", "status": "pending"},
-    {"day": 7, "slot": 3, "topic": "Warum man im Flugzeug Alkohol schneller spürt", "category": "Wissenschaft", "status": "pending"}
+    {
+      "day": 1,
+      "slot": 1,
+      "topic": "Kiwi vs Orange Vitamin C",
+      "category": "Ernährung",
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-18_kiwi-vitamin-c.mp4",
+      "media_id": "17993083029116565"
+    },
+    {
+      "day": 1,
+      "slot": 2,
+      "topic": "Schlafzyklen 90-Min-Regel",
+      "category": "Psychologie",
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-18_schlaf.mp4",
+      "media_id": "17909714352667479"
+    },
+    {
+      "day": 1,
+      "slot": 3,
+      "topic": "Blitzer km/h Toleranz",
+      "category": "Wissenschaft",
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-18_blitzer-toleranz.mp4",
+      "media_id": "18106433360373914"
+    },
+    {
+      "day": 2,
+      "slot": 1,
+      "topic": "Dehnen vor Sport schadet mehr als es hilft",
+      "category": "Sport",
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-19_dehnen-vor-sport.mp4",
+      "media_id": "18116533049272070",
+      "posted_at": "2026-11-18T18:12:00Z"
+    },
+    {
+      "day": 2,
+      "slot": 2,
+      "topic": "3-Sekunden Blickkontakt-Trick für Sympathie",
+      "category": "Sozialkompetenz",
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-19_blickkontakt-trick.mp4",
+      "media_id": "17968530779984895",
+      "posted_at": "2026-11-19T08:11:00Z"
+    },
+    {
+      "day": 2,
+      "slot": 3,
+      "topic": "Warum Kaffee direkt nach dem Essen Eisenaufnahme blockiert",
+      "category": "Ernährung",
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-19_kaffee-nach-essen.mp4",
+      "media_id": "18361679974169756",
+      "posted_at": "2026-11-19T13:15:02Z"
+    },
+    {
+      "day": 3,
+      "slot": 1,
+      "topic": "Der Ikea-Effekt: Selbstgebautes lieben wir mehr",
+      "category": "Psychologie",
+      "status": "ready",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_ikea-effekt.mp4"
+    },
+    {
+      "day": 3,
+      "slot": 2,
+      "topic": "Warum der Himmel blau ist (Rayleigh-Streuung)",
+      "category": "Wissenschaft",
+      "status": "ready",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_himmel-blau.mp4"
+    },
+    {
+      "day": 3,
+      "slot": 3,
+      "topic": "Wie viele Schritte du wirklich am Tag brauchst",
+      "category": "Sport",
+      "status": "ready",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_schritte-mythos.mp4"
+    },
+    {
+      "day": 4,
+      "slot": 1,
+      "topic": "Mimicry: Warum Spiegeln sympathisch macht",
+      "category": "Sozialkompetenz",
+      "status": "pending"
+    },
+    {
+      "day": 4,
+      "slot": 2,
+      "topic": "Welches Öl du nie zu stark erhitzen solltest",
+      "category": "Ernährung",
+      "status": "pending"
+    },
+    {
+      "day": 4,
+      "slot": 3,
+      "topic": "Warum Fallschirmspringer nicht ewig schneller werden",
+      "category": "Wissenschaft",
+      "status": "pending"
+    },
+    {
+      "day": 5,
+      "slot": 1,
+      "topic": "Der Zeigarnik-Effekt: Unfertiges lässt uns nicht los",
+      "category": "Psychologie",
+      "status": "pending"
+    },
+    {
+      "day": 5,
+      "slot": 2,
+      "topic": "Muskelkater hat nichts mit Milchsäure zu tun",
+      "category": "Sport",
+      "status": "pending"
+    },
+    {
+      "day": 5,
+      "slot": 3,
+      "topic": "Dunkle vs weiße Schokolade - was wirklich drin ist",
+      "category": "Ernährung",
+      "status": "pending"
+    },
+    {
+      "day": 6,
+      "slot": 1,
+      "topic": "Warum Katzen fast immer auf die Pfoten fallen",
+      "category": "Wissenschaft",
+      "status": "pending"
+    },
+    {
+      "day": 6,
+      "slot": 2,
+      "topic": "Die 2-Minuten-Regel gegen Aufschieben",
+      "category": "Sozialkompetenz",
+      "status": "pending"
+    },
+    {
+      "day": 6,
+      "slot": 3,
+      "topic": "Warum wir prokrastinieren, obwohl wir es besser wissen",
+      "category": "Psychologie",
+      "status": "pending"
+    },
+    {
+      "day": 7,
+      "slot": 1,
+      "topic": "Bananen-Reifung: warum und wie stoppen",
+      "category": "Ernährung",
+      "status": "pending"
+    },
+    {
+      "day": 7,
+      "slot": 2,
+      "topic": "Cardio vor oder nach Krafttraining?",
+      "category": "Sport",
+      "status": "pending"
+    },
+    {
+      "day": 7,
+      "slot": 3,
+      "topic": "Warum man im Flugzeug Alkohol schneller spürt",
+      "category": "Wissenschaft",
+      "status": "pending"
+    }
   ]
 }
