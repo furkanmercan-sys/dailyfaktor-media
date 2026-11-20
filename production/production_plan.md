@@ -214,6 +214,19 @@ Sozialkompetenz A (Herz+Blasen): rc2SdQI3RWWhRSmSVLZl | Sozialkompetenz B (Auge)
 (Banane-Icon zusätzlich generiert: zux1kLdVMW0jDH5TQ9YU - optional für Bananen-Thema Tag7)
 Charakter: ny2IJBZnDKzbjZpk0l7x
 
+## Instagram-Titelbild / Cover (2026-11-20)
+Problem: Instagram zeigt für die Reels kein Titelbild und wirkt im Feed "schwarz" - lag daran, dass
+`create_video_post` nie ein `cover_url` übergeben hat, also nutzt Instagram per Default das erste Frame
+(bei uns ein dunkler Verlauf = wirkt fast schwarz).
+Lösung: Festes Branding-Titelbild erstellt und ins Repo gelegt:
+  https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/covers/cover_dr_wissen.jpg
+  (1080x1920 JPEG, Dr.-Wissen-Platzhalter-Charakter, Badge, Tagline "Täglich ein neuer Fakt", @dailyfaktor)
+Ab sofort IMMER `cover_url` mit dieser URL an `create_video_post` übergeben (Windsor-Action unterstützt das:
+params.cover_url = publicly accessible JPEG). Der tägliche Posting-Trigger (trig_015j1YodFZFshjX3DBnSRYxA)
+muss entsprechend aktualisiert werden, damit auch automatische Posts das Cover mitschicken.
+Sobald das echte ElevenLabs-Charakterbild (Download durch Nutzer) vorliegt, dieses Titelbild damit ersetzen
+(gleicher Dateiname/Pfad beibehalten, dann ändert sich die URL nicht).
+
 ## Nächste Schritte sobald Blocker gelöst
 1. Audio für Tag 6-10 generieren (gleiche Stimme vv3bG6FrcGtmeOdRSriS, Muster wie oben).
 2. Alle Audiodateien + Charakterbild herunterladen.
