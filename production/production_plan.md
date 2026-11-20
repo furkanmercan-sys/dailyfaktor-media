@@ -9,14 +9,31 @@
 ## Stimme
 - "Thomas - Warm German Explainer", voice_id = vv3bG6FrcGtmeOdRSriS, model eleven_v4
 
-## Video-Template (aus bestehenden geposteten Videos rekonstruiert)
+## Video-Template v1 (aus bestehenden geposteten Videos rekonstruiert, Tag1-3 + Tag4/5 Audio)
 1080x1920, ~22-35s, 4 Audiosegmente pro Video:
   1. Hook-Frage (Badge "DR. WISSEN" oben, Charakter groß mittig, Frage unten, dunkel-lila Verlaufshintergrund)
   2. [curious] Antwort/Begriff (Charakter klein oben, Sprechblase mit Text mittig)
   3. [calm] Fortsetzung/Erklärung (gleiche Anordnung, Sprechblasenfarbe variiert leicht)
   4. [warm] Payoff/CTA (Charakter wieder groß mit Badge, Fazit-Text)
   + Outro-Overlay letzte ~1-2s: Hintergrund wird warm/orange, "FOLLOW @DAILYFAKTOR" / "New fact tomorrow."
-Rendering gemäß video-making Skill: pro Szene eigene Datei rendern (loop=-1:1 + trim=duration=<audiolänge>), dann concat demuxer, Audio pro Szene gemuxt.
+
+## Nutzer-Feedback (2026-11-20 Abend) → Video-Template v2
+Feedback: Aufbau insgesamt gut, aber visuell zu statisch. Gewünscht:
+  - "Realistischer aufgebaut" = NICHT fotorealistische Personen, sondern ein dynamischerer, durchdachterer visueller Aufbau (wirkt weniger wie eine einzelne starre Folie pro Segment).
+  - Mehr Szenenwechsel (nicht nur 4 fast identische Layouts, sondern klar unterscheidbare Schnitte).
+  - Text sichtbar/deutlich in der Bildmitte (nicht unten am Rand wie bisher).
+  - Szenen sollen inhaltlich "aufbauen", d.h. pro Thema eigene Illustrations-/Icon-Elemente statt immer nur des Maskottchens in derselben Pose.
+
+### Template v2 – Szenenplan (5 Szenen statt 4, gleicher Stil: flat-vector, kein Fotorealismus)
+1. **Hook (Intro)**: Dunkel-lila Verlauf mit thema-bezogenen Icon-Silhouetten im Hintergrund (z.B. Öltropfen, Blitzer-Symbol, Gehirn-Icons - je nach Kategorie ein Icon-Set), Badge "DR. WISSEN" oben, Charakter mittig-klein eingeblendet, **Hook-Frage groß und zentriert in der Bildmitte** (nicht unten), leichter Zoom-in (Ken-Burns) auf den Hintergrund für Bewegung.
+2. **Begriff/Antwort**: Harter Schnitt. Charakter wandert in eine Ecke (z.B. unten links, klein), die Bildmitte zeigt eine **themenspezifische Flat-Icon-Illustration** (z.B. zwei Früchte nebeneinander, ein Tacho, zwei Gehirnhälften mit Pfeil), der Fachbegriff als großer zentrierter Text darüber/darunter.
+3. **Erklärung/Mechanismus**: Harter Schnitt, andere Kamera-Perspektive (reingezoomt auf die Illustration aus Szene 2, ggf. mit Pfeilen/Kreisen als Annotation), Text weiterhin zentriert, Charakter kurz am Bildrand sichtbar für Kontinuität.
+4. **Payoff/Fazit**: Harter Schnitt zurück auf Charakter groß+zentriert mit Badge, Hintergrundfarbe wechselt leicht (z.B. wärmerer Lila-Ton), zentrierter Fazit-Text, kurzer Pop-in-Effekt auf den Text.
+5. **Outro**: Harter Schnitt auf warmen Orange-Verlauf, Charakter klein, "FOLGE @DAILYFAKTOR" + "Morgen: neuer Fakt" zentriert.
+Zwischen Szenen: kein Crossfade, sondern bewusst harte Schnitte (Jump-Cuts) für den dynamischeren, "realistischeren" Social-Media-Schnitt-Rhythmus; optional ein dezenter Whip-Pan/Zoom-Blitz als Übergang alle 2 Szenen. Jede Szene bekommt einen leichten Kamera-Move (langsamer Zoom oder Pan) statt komplett statischem Bild, gemäß video-making Skill pro Szene eigene Render-Datei + concat demuxer.
+Pro Thema wird vorab ein kleines Set an 2-3 Icon/Illustrations-Motiven festgelegt (passend zur Kategorie/zum Fakt), die in Szene 2+3 wiederverwendet werden.
+
+Rendering gemäß video-making Skill: pro Szene eigene Datei rendern (loop=-1:1 + trim=duration=<audiolänge>, ggf. mit zoompan-Filter für Kamera-Move), dann concat demuxer, Audio pro Szene gemuxt.
 
 ## BLOCKER (wichtig!)
 Das Sandbox-Netzwerk erlaubt keine Verbindung zu `elevenlabsusercontent.com` (403 "no rule or network setting allows this host") – weder per curl noch per WebFetch-Subagent (PROVENANCE_REQUIRED/Timeout). Dadurch können generierte Audio-Dateien (mp3) und das Charakterbild (png) nicht heruntergeladen werden, obwohl die Generierung in ElevenLabs selbst erfolgreich ist (Status "completed").
