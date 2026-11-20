@@ -224,8 +224,13 @@ Lösung: Festes Branding-Titelbild erstellt und ins Repo gelegt:
 Ab sofort IMMER `cover_url` mit dieser URL an `create_video_post` übergeben (Windsor-Action unterstützt das:
 params.cover_url = publicly accessible JPEG). Der tägliche Posting-Trigger (trig_015j1YodFZFshjX3DBnSRYxA)
 muss entsprechend aktualisiert werden, damit auch automatische Posts das Cover mitschicken.
-Sobald das echte ElevenLabs-Charakterbild (Download durch Nutzer) vorliegt, dieses Titelbild damit ersetzen
-(gleicher Dateiname/Pfad beibehalten, dann ändert sich die URL nicht).
+UPDATE (2026-11-20, später am Abend): Nutzer hat das echte Dr.-Wissen-Charakterbild hochgeladen
+(production/assets/character_dr_wissen.png, transparenter Hintergrund, von ElevenLabs). Platzhalter-Cover
+wurde durch echtes Titelbild ersetzt (Charakter freigestellt + auf Verlaufshintergrund mit Badge/Tagline/Handle
+komponiert), gleicher Dateipfad beibehalten → URL bleibt stabil:
+https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/covers/cover_dr_wissen.jpg
+Außerdem hochgeladen: Ernährung-Icon B (Öltropfen, production/assets/icons/ernaehrung_b_oel.png).
+Damit sind jetzt ALLE 11 Bild-Assets (Charakter + 10 Kategorie-Icons) + Bonus-Banane vorhanden.
 
 ## Nächste Schritte sobald Blocker gelöst
 1. Audio für Tag 6-10 generieren (gleiche Stimme vv3bG6FrcGtmeOdRSriS, Muster wie oben).
