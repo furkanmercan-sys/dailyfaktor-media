@@ -83,8 +83,10 @@
       "slot": 3,
       "topic": "Wie viele Schritte du wirklich am Tag brauchst",
       "category": "Sport",
-      "status": "ready",
-      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_schritte-mythos.mp4"
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_schritte-mythos.mp4",
+      "media_id": "17918574249495930",
+      "posted_at": "2026-11-20T13:14:00Z"
     },
     {
       "day": 4,
