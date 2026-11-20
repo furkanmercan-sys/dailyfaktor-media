@@ -163,6 +163,57 @@ Flow: Hu3cZdIeL5UisObsZxeM ("dailyfaktor_day4"), 12/12 Segmente completed.
   3 [calm]: "...an den scharfen Ecken konzentrierte sich der Luftdruck so stark, dass dort Risse im Rumpf entstanden, die zu Abstürzen führten."
   4 [warm]: "Runde Fenster verteilen den Druck gleichmäßiger - heute Standard in der Luftfahrt."
 
+## Tag 6-10 Audio: ALLES generiert (Stand 2026-11-20, Status lief auf "completed" wie bei Tag 4/5)
+Plus 10 Kategorie-Icons + das Dr.-Wissen-Charakterbild. Da ich (Claude) die Dateien wegen des Netzwerk-Blockers nicht
+herunterladen kann, aber der Nutzer das selbst kann: **Reihenfolge ist der Schlüssel zum Zuordnen.**
+
+### So kommen die Dateien zu mir (für den Nutzer)
+1. In der ElevenLabs-App: **Image/Video → History** öffnen, nach Erstellungsdatum **älteste zuerst** sortieren.
+   Die ersten 11 Bilder (in dieser Reihenfolge) sind: 1) Dr.-Wissen-Charakter, 2) Ernährung-Icon A (Teller),
+   3) Ernährung-Icon B (Öltropfen), 4) Sport-Icon A (Laufschuhe), 5) Sport-Icon B (Hantel+Puls),
+   6) Psychologie-Icon A (Gehirn+Glühbirne), 7) Psychologie-Icon B (Sprechblasen gespiegelt),
+   8) Wissenschaft-Icon A (Atom), 9) Wissenschaft-Icon B (Tacho), 10) Sozialkompetenz-Icon A (Herz+Sprechblasen),
+   11) Sozialkompetenz-Icon B (Auge+Funkeln). Alle herunterladen (als PNG, mit Transparenz) und in den Chat hochladen,
+   am besten in dieser Reihenfolge benannt (z.B. 01_charakter.png, 02_icon.png, ...).
+2. In der ElevenLabs-App: **Speech Synthesis → History** öffnen, ebenfalls älteste zuerst sortieren.
+   Die Tag-4/5-Audios sind schon einzeln nach generation_id oben im Dokument aufgeführt/bekannt.
+   Die NEUEN 60 Audio-Dateien (Tag 6-10) kommen in exakt dieser Reihenfolge (so wurden sie generiert):
+   Tag6-Slot1(4) → Tag6-Slot2(4) → Tag6-Slot3(4) → Tag7-Slot1(4) → Tag7-Slot2(4) → Tag7-Slot3(4) →
+   Tag8-Slot1(4) → Tag8-Slot2(4) → Tag8-Slot3(4) → Tag9-Slot1(4) → Tag9-Slot2(4) → Tag9-Slot3(4) →
+   Tag10-Slot1(4) → Tag10-Slot2(4) → Tag10-Slot3(4). Jeweils 4 Segmente pro Slot in der Reihenfolge
+   Hook → [curious] → [calm] → [warm] (Text steht weiter oben in diesem Dokument bei jedem Tag/Slot).
+   Am einfachsten: alle 60 als mp3 herunterladen, in chronologischer Reihenfolge durchnummerieren
+   (z.B. 001.mp3 ... 060.mp3) und hochladen - ich ordne sie dann anhand der Reihenfolge den Themen zu.
+3. Alternativ (am wenigsten fehleranfällig): einfach ALLES aus der History (Bilder + Audio) als ZIP/Batch
+   herunterladen und mir hier hochladen, mit Hinweis "älteste zuerst sortiert". Ich matche dann selbst anhand
+   Dateidatum/Reihenfolge in den Metadaten.
+
+### Flow-IDs Tag 6-10 (zur Referenz, falls Einzelzugriff nötig ist)
+Tag6: HFElYV8N40NcaxjBqOsq, qtlWmiDMYJ0okIRGI4v0, yEekQiIJSZJuHQdhq8Jq, NLwuy04aZ659yEpZDaO1 (Slot1 Hook..warm);
+65GT6iRqIWUuLjz8UiWW, 4pNtWJE9iatQZQ2AD71G, ocLWvFnRvTedchnWhq30, EdoeCl9Xd05XZVSycipT (Slot2);
+jSlP66p6QTO3ZpleGXCe, f0WH6SOpNfLSODtmMmzP, GYnZCWmShIGnUPESB87o, NEmVvTEiuDZyzYyW8aWL (Slot3)
+Tag7: JOQ8SkcUdE2r4jIskFqN, fWMySmkdVpenSyO1U3Wl, WBxxWucu005nyBdv2ewE, wcOliEAyqB8ABRkdUljw (Slot1);
+NtlRG0MtOVkkJsrf7Mm9, How2BH7lJe95NZH8t8eM, yKBYwRiO5q5J0BCK3Sik, 1zBYksMOIYCblfuRVP5n (Slot2);
+3Tr89aK7H7ajMbnkBA7z, GU7Q6DnLTs0CH029tyiI, esdVlUCg5btA9W1ubOIh, NGjbXfLTkXP6KTXrkx4E (Slot3)
+Tag8: 6iMJ82wDgEfZb7Z5V3Yy, ZWbWYPSMWDLHrubDA0pI, O4nC1beLvB8Z12XHeAQN, MCY2ZbTRjFhrpGj9LYxO (Slot1);
+CewhIE9gORrHRNS41rsO, fJQeuc4bLGeykwQ1ieZE, aJRSdtNVLBpYuQpBFNT2, ewNQnXDcu5NoEYbVwWct (Slot2);
+DpUQp8tFVDslwySUAbad, ejSFCXU6aNSeh8KoESpl, zh3hCjwarPDBXuTz2bo5, StKMzY2mbfn3T2cUMP5i (Slot3)
+Tag9: MDNP29laJWViXJK1tnkT, xGug96wxQMKo3spbIgmx, pWRO0qKaCHCmcUTlhI7p, fREHJJfaoIaKNJaepXIX (Slot1);
+QTa75BB1mepVSmoYxWtM, qDZxWfEGkoZ88nneUv1T, ltYRNO6AqWrXPjR7Peqv, x3BqcAj0V5iBHsyjJKSc (Slot2);
+hQ9sSERY21mXI0SibOSP, WRlDg1harncpXrolgbhz, JuBRMKGcg7DQV43tarl5, 6jd6ktdFeCe7JySoAobX (Slot3)
+Tag10: FS5AfOCgxVkYdj5N7TGe, rnGwRCBNQuxwuPjdP7lT, Om8ZVbJRhqrglwHVOnSA, eO5cW83Ts5Omt2PuP489 (Slot1);
+88nAVo6rGcyKxvlHMTIF, FN7NEYS3SyKK2ijKdKRC, F2qcM0j3Ox4BucoAmM48, 868QPhHrFXLSMdhraPeE (Slot2);
+BGXUek0Z5Bx5bqsvTt5v, oru7h3m1PRpjWeI6SAxd, Uf2eHJACVMlb18MGSBMM, Hxdf6SwxSsaL5we4rzVq (Slot3)
+
+### Icon-Flow-IDs (zur Referenz)
+Ernährung A (Teller): zcJmugwKTceXLyyZuGxe | Ernährung B (Öl): RfvGlAHkE5Ao6L6F4at8
+Sport A (Laufschuhe): VwRcSvCHdNYbglmKFWev | Sport B (Hantel): WAevJkB7lczN0pVBf6ca
+Psychologie A (Gehirn+Lampe): ybzbVMcPDXsJroZL1xlS | Psychologie B (Sprechblasen): VGgAjTHoaexUWNpGeRIS
+Wissenschaft A (Atom): 8w5S320y9EjsyNTQSu69 | Wissenschaft B (Tacho): whLaPhTJHjxLANzMWZaE
+Sozialkompetenz A (Herz+Blasen): rc2SdQI3RWWhRSmSVLZl | Sozialkompetenz B (Auge): KlJx0nc5GPoVb8Kzn6h5
+(Banane-Icon zusätzlich generiert: zux1kLdVMW0jDH5TQ9YU - optional für Bananen-Thema Tag7)
+Charakter: ny2IJBZnDKzbjZpk0l7x
+
 ## Nächste Schritte sobald Blocker gelöst
 1. Audio für Tag 6-10 generieren (gleiche Stimme vv3bG6FrcGtmeOdRSriS, Muster wie oben).
 2. Alle Audiodateien + Charakterbild herunterladen.
