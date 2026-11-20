@@ -73,8 +73,10 @@
       "slot": 2,
       "topic": "Warum der Himmel blau ist (Rayleigh-Streuung)",
       "category": "Wissenschaft",
-      "status": "ready",
-      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_himmel-blau.mp4"
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-20_himmel-blau.mp4",
+      "media_id": "18156755296533611",
+      "posted_at": "2026-11-20T08:12:40Z"
     },
     {
       "day": 3,
