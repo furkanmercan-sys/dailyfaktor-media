@@ -171,6 +171,69 @@
       "topic": "Warum man im Flugzeug Alkohol schneller spürt",
       "category": "Wissenschaft",
       "status": "pending"
+    },
+    {
+      "day": 8,
+      "slot": 1,
+      "topic": "Warum aufgewärmter Spinat riskant werden kann",
+      "category": "Ernährung",
+      "status": "pending"
+    },
+    {
+      "day": 8,
+      "slot": 2,
+      "topic": "Der Halo-Effekt: Warum schöne Menschen kompetenter wirken",
+      "category": "Psychologie",
+      "status": "pending"
+    },
+    {
+      "day": 8,
+      "slot": 3,
+      "topic": "Kalt duschen direkt nach dem Krafttraining?",
+      "category": "Sport",
+      "status": "pending"
+    },
+    {
+      "day": 9,
+      "slot": 1,
+      "topic": "Warum man im All kein Laserschwert hört",
+      "category": "Wissenschaft",
+      "status": "pending"
+    },
+    {
+      "day": 9,
+      "slot": 2,
+      "topic": "Die Pause-Technik: 2 Sekunden Schweigen wirken klüger",
+      "category": "Sozialkompetenz",
+      "status": "pending"
+    },
+    {
+      "day": 9,
+      "slot": 3,
+      "topic": "Warum Honig nie schlecht wird",
+      "category": "Ernährung",
+      "status": "pending"
+    },
+    {
+      "day": 10,
+      "slot": 1,
+      "topic": "Der Pygmalion-Effekt: Erwartungen verändern Leistung",
+      "category": "Psychologie",
+      "status": "pending"
+    },
+    {
+      "day": 10,
+      "slot": 2,
+      "topic": "Wird man vom Krafttraining wirklich 'bulky'?",
+      "category": "Sport",
+      "status": "pending"
+    },
+    {
+      "day": 10,
+      "slot": 3,
+      "topic": "Warum Flugzeugfenster rund sind",
+      "category": "Wissenschaft",
+      "status": "pending"
     }
   ]
 }
