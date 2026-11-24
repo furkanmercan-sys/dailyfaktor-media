@@ -93,42 +93,48 @@
       "slot": 1,
       "topic": "Mimicry: Warum Spiegeln sympathisch macht",
       "category": "Sozialkompetenz",
-      "status": "pending"
+      "status": "ready",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-21_mimicry-effekt.mp4"
     },
     {
       "day": 4,
       "slot": 2,
       "topic": "Welches Öl du nie zu stark erhitzen solltest",
       "category": "Ernährung",
-      "status": "pending"
+      "status": "ready",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-21_oel-rauchpunkt.mp4"
     },
     {
       "day": 4,
       "slot": 3,
       "topic": "Warum Fallschirmspringer nicht ewig schneller werden",
       "category": "Wissenschaft",
-      "status": "pending"
+      "status": "ready",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-21_fallschirm-grenzgeschwindigkeit.mp4"
     },
     {
       "day": 5,
       "slot": 1,
       "topic": "Der Zeigarnik-Effekt: Unfertiges lässt uns nicht los",
       "category": "Psychologie",
-      "status": "pending"
+      "status": "ready",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-22_zeigarnik-effekt.mp4"
     },
     {
       "day": 5,
       "slot": 2,
       "topic": "Muskelkater hat nichts mit Milchsäure zu tun",
       "category": "Sport",
-      "status": "pending"
+      "status": "ready",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-22_muskelkater-mythos.mp4"
     },
     {
       "day": 5,
       "slot": 3,
       "topic": "Dunkle vs weiße Schokolade - was wirklich drin ist",
       "category": "Ernährung",
-      "status": "pending"
+      "status": "ready",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-22_schokolade-zucker.mp4"
     },
     {
       "day": 6,
