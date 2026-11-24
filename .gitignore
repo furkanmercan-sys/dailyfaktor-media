@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+
+# Regenerable render intermediates (per-scene PNG frames + encoded scene clips).
+# Reproducible via production/scripts/make_all.py; not needed in the repo.
+production/render/frames/
+production/render/scenes/
