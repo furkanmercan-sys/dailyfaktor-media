@@ -64,8 +64,11 @@ def rounded_badge(im, text, font, center_x, top_y, pad_x=36, pad_y=16, bg=(255,2
     d.text((center_x - tw/2, y0 + pad_y - bbox[1]), text, font=font, fill=fg)
     return y0 + box_h
 
+MAX_UPSCALE = 1.6  # never blow a source asset up more than this - above it it just looks blurry/pixelated
+
 def paste_icon(im, icon_path, target_w, center, rotate=0, flip=False, opacity=255):
     icon = Image.open(icon_path).convert("RGBA")
+    target_w = min(target_w, icon.width * MAX_UPSCALE)
     ratio = target_w / icon.width
     icon = icon.resize((int(icon.width*ratio), int(icon.height*ratio)), Image.LANCZOS)
     if flip:
@@ -134,15 +137,20 @@ def scene_begriff(icon_main, begriff_text, char_corner=True):
                         stroke_width=5, stroke_fill=(20,5,30,255))
     return im
 
-def scene_explain(icon_main, explain_text, char_corner=True, zoom_crop=True):
+def scene_explain(icon_main, explain_text, char_corner=True, zoom_crop=False):
+    # NOTE: zoom_crop is OFF by default now. The old path cropped an already-small
+    # source icon down to its middle ~70% and then upscaled that crop back up to full
+    # width - i.e. it digitally zoomed into a low-res asset, which is exactly what made
+    # scene 3 look blurry/over-zoomed. Keep the icon whole and let MAX_UPSCALE in
+    # paste_icon/this function cap how far any source image gets blown up.
     im = base_canvas(PURPLE_DARK, PURPLE_WARM)
     icon = Image.open(os.path.join(IMG, icon_main)).convert("RGBA")
-    tw = int(W*1.05)
+    tw = min(int(W*0.82), int(icon.width * MAX_UPSCALE))
     ratio = tw/icon.width
     icon = icon.resize((tw, int(icon.height*ratio)), Image.LANCZOS)
     if zoom_crop:
         cw, ch = icon.width, icon.height
-        crop = icon.crop((int(cw*0.15), int(ch*0.1), int(cw*0.85), int(ch*0.9)))
+        crop = icon.crop((int(cw*0.1), int(ch*0.06), int(cw*0.9), int(ch*0.94)))
         crop = crop.resize((tw, int(tw*crop.height/crop.width)), Image.LANCZOS)
         icon = crop
     x = int(W/2 - icon.width/2); y = int(H*0.30 - icon.height/2)
@@ -183,13 +191,22 @@ def ffprobe_duration(path):
 def render_scene_video(png_path, out_path, duration, zoom_dir="in", audio_path=None):
     tmp = out_path + ".tmp.mp4"
     frames = int(round(duration*FPS))
+    # Ken-Burns zoom, kept subtle. The old version zoomed up to 1.18x AND pre-scaled
+    # the frame to 1600px wide (1.48x of the native 1080x1920 canvas) before zooming -
+    # i.e. every video was blown up ~1.5-1.7x beyond native resolution from frame one.
+    # That compounded with already-small source icons is what caused the blur/
+    # "too zoomed in" look. Fix: only pre-scale by just enough margin to cover the
+    # (now much smaller) zoom range, so most of the frame stays at native resolution.
+    MAX_ZOOM = 1.06
+    PRESCALE_MARGIN = 1.10  # slightly more than MAX_ZOOM so zoompan always has a pixel to crop into
     if zoom_dir == "in":
-        zexpr = "min(zoom+0.0012,1.18)"
+        zexpr = f"min(zoom+0.0006,{MAX_ZOOM})"
     elif zoom_dir == "out":
-        zexpr = "if(eq(on,1),1.18,max(1.18-0.0012*on,1.0))"
+        zexpr = f"if(eq(on,1),{MAX_ZOOM},max({MAX_ZOOM}-0.0006*on,1.0))"
     else:
-        zexpr = "1.06"
-    vf = (f"scale=1600:-1,zoompan=z='{zexpr}':d={frames}:s={W}x{H}:fps={FPS},"
+        zexpr = "1.02"
+    prescale_w = int(W * PRESCALE_MARGIN)
+    vf = (f"scale={prescale_w}:-2:flags=lanczos,zoompan=z='{zexpr}':d={frames}:s={W}x{H}:fps={FPS},"
           f"format=yuv420p")
     cmd = ["ffmpeg","-y","-loop","1","-i", png_path]
     if audio_path:
