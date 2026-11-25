@@ -123,8 +123,10 @@
       "slot": 1,
       "topic": "Der Zeigarnik-Effekt: Unfertiges lässt uns nicht los",
       "category": "Psychologie",
-      "status": "ready",
-      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-22_zeigarnik-effekt.mp4"
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-22_zeigarnik-effekt.mp4",
+      "media_id": "17978260269156874",
+      "posted_at": "2026-11-25T18:11:00Z"
     },
     {
       "day": 5,
