@@ -103,8 +103,10 @@
       "slot": 2,
       "topic": "Welches Öl du nie zu stark erhitzen solltest",
       "category": "Ernährung",
-      "status": "ready",
-      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-21_oel-rauchpunkt.mp4"
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-21_oel-rauchpunkt.mp4",
+      "media_id": "18131016185490333",
+      "posted_at": "2026-11-25T08:11:22Z"
     },
     {
       "day": 4,
