@@ -143,8 +143,10 @@
       "slot": 3,
       "topic": "Dunkle vs weiße Schokolade - was wirklich drin ist",
       "category": "Ernährung",
-      "status": "ready",
-      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-22_schokolade-zucker.mp4"
+      "status": "posted",
+      "video_url": "https://raw.githubusercontent.com/furkanmercan-sys/dailyfaktor-media/main/videos/2026-11-22_schokolade-zucker.mp4",
+      "media_id": "18015026690770652",
+      "posted_at": "2026-11-26T13:12:00Z"
     },
     {
       "day": 6,
